@@ -23,7 +23,7 @@ sudo mv kops-linux-amd64 /usr/local/bin/kops
 kops version
 
 # 4) Create S3 bucket (for kOps state store)
-echo ">>> Creating S3 bucket: riyansbucketkops..."
+echo ">>> Creating S3 bucket: ibtesamsbucketkops..."
 aws s3 mb s3://ibtesamsbucketkops
 aws s3 ls
 export KOPS_STATE_STORE=s3://ibtesamsbucketkops
